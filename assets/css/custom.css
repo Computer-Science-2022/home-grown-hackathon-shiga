@@ -1,0 +1,489 @@
+.willards-logo {
+    width: 150px;
+    height: auto
+}
+
+.bg-orange {
+    background-color: #48a043 !important;
+}
+
+.text-orange {
+    color: #48a043 !important;
+}
+
+.title-section {
+    position: relative;
+}
+
+.justify-content-center-1 {
+    display: flex;
+    justify-content: center !important;
+}
+
+.title-section-white::after {
+    border-color: #fff !important;
+}
+
+.title-section-sm::before {
+    width: 5% !important;
+    margin-left: calc(50% - 2.5%) !important;
+}
+
+.title-section-sm::after {
+    width: 10% !important;
+    margin-left: calc(50% - 5%) !important;
+}
+
+.title-section::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 30%;
+    margin-left: calc(50% - 15%);
+    border-width: 0 0 3px;
+    border-style: solid;
+    border-color: #0e4c9898;
+}
+
+.title-section {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+}
+
+.title-section::before {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+
+    border-width: 0 0 8px;
+    border-style: solid;
+    width: 10%;
+    margin-left: calc(50% - 5%);
+    display: grid;
+    align-self: center;
+}
+
+@media screen and (max-width:680px) {
+    .title-section::after {
+        width: 50%;
+        margin-left: calc(50% - 25%);
+    }
+}
+
+@media screen and (max-width:398px) {
+    .hero-abstract {
+        width: 80% !important;
+    }
+}
+
+
+
+
+.aboutus-hero {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/custom/truck01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services-hero {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/custom/car.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.services-hero > .layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactus-hero{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/custom/contactus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.aboutus-hero>.layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactus-hero > .layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.layer h1 {
+    color: #fff;
+}
+
+
+.contact-card {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card>img {
+    border-radius: inherit;
+    border: #48a043 2px solid;
+    width: inherit;
+    height: inherit;
+}
+
+
+@media screen and (max-width:500px) {
+    .aboutus-hero {
+        height: 300px;
+    }
+}
+
+.ftco-section {
+    padding: 4em 0;
+}
+
+.ftco-no-pt {
+    padding-top: 0;
+}
+
+.ftco-no-pb {
+    padding-bottom: 0;
+}
+
+.heading-section {
+    font-size: 28px;
+    color: #000;
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+.wrapper {
+    width: 100%;
+}
+
+.contact-wrap {
+    /* background: #e8edf0; */
+}
+
+.dbox {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+    .dbox {
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
+
+.dbox p {
+    margin-bottom: 0;
+}
+
+.dbox p span {
+    font-weight: 500;
+    color: #000;
+}
+
+.dbox p a {
+    color: #2553b8;
+}
+
+.dbox .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #48a043;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.dbox .icon span {
+    font-size: 20px;
+    color: #fff;
+}
+
+.dbox .text {
+    width: 100%;
+}
+
+.btn {
+    padding: 12px 16px;
+    cursor: pointer;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    outline: none !important;
+    -webkit-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.22) !important;
+    -moz-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.22) !important;
+    box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.22) !important;
+}
+
+.btn.btn-primary {
+    background: #2553b8 !important;
+    border-color: #2553b8 !important;
+    color: #fff;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+    border-color: #1c408e !important;
+    background: #1c408e !important;
+}
+
+.contactForm .label {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.contactForm .form-control {
+    border: none;
+}
+
+#map {
+    width: 100%;
+}
+
+@media (max-width: 767.98px) {
+    #map {
+        height: 300px;
+    }
+}
+
+#contactForm .error {
+    color: red;
+    font-size: 12px;
+}
+
+#contactForm .form-control {
+    font-size: 16px;
+}
+
+#message {
+    resize: vertical;
+}
+
+#form-message-warning,
+#form-message-success {
+    display: none;
+}
+
+#form-message-warning {
+    color: red;
+}
+
+#form-message-success {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2553b8;
+}
+
+
+.service-card{
+    width:24% !important;
+}
+.service-card-d{
+    width:49% !important;
+}
+
+@media (max-width: 990px) {
+    .service-card{
+        width:49% !important;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 771px) {
+    .service-card{
+        width:80% !important;
+    }
+    .service-card-d{
+        width:80% !important;
+        margin-top: 10px;
+    }
+    .service-cards{
+        justify-content:center !important;
+    }
+}
+@media (max-width: 480px) {
+    .service-card{
+        width:100% !important;
+    }
+
+    .service-card-d{
+        width:100% !important;
+    }
+    .service-cards{
+        justify-content:center !important;
+    }
+
+.logo-footer {
+    max-width: 50% !important;
+}
+
+}
+
+.service-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+/* drivers */
+
+
+
+
+.driverus-hero{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/custom/drivers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.driverus-hero >.layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.driverus-hero >.layer h1{
+    color: #fff;
+}
+
+
+
+.tabs {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 0;
+   
+    
+}
+
+ .tabs .tab {
+    display: block;
+    flex: 1%;
+    height: 20px;
+}
+
+  .tabs .tab a[data-switcher] {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tabs .tab a[data-joinus]{
+    background-color: #0e4d98;
+}
+
+.tabs .tab a[data-login]{
+
+    background-color: #48a043;
+}
+
+.login-inactive::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-color: #0e4d98;
+  height: 7px;
+  left: 0px;
+  bottom: 0px;
+}
+.joinus-inactive::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: #48a043;
+    height: 7px;
+    left: 0px;
+    bottom: 0px;
+  }

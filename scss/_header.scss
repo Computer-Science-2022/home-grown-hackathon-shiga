@@ -1,0 +1,169 @@
+
+/*  style rule for the header menu*/
+header{
+    width: 100%;
+    background-color: $primary-color;
+    height: 100px;
+    position: fixed; 
+    top: 0px;
+    z-index: 100;
+
+    .header-nav{
+        width: 93%;
+        height: 100%;
+        background-color: $white-color;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        .logo-container{
+            width: 200px;
+            height: 100%;
+            a{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .nav-container{
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            .contacts-menu{
+                width: inherit;
+                height: 40%;
+                padding-right: 40px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .contacts{
+                    float: right;
+                    display: flex;
+                    color: $primary-color;
+                    div{
+                        margin-left: 20px;
+                        &.languages{
+                            display: flex;
+                        }
+                        a{
+                            text-align: none;
+                            margin-right: 5px;
+                            color: $primary-color;
+                        }
+                        i{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            .main-menu{
+                height: 60%;
+                background-color: $primary-color;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+                box-sizing: border-box;
+                padding-right: 60px;
+                .mobile-logo{
+                    display: none;
+                }
+                .nav-links{
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    li{
+                        list-style: none;
+                        margin-right: 20px;
+                        display: flex;
+                        align-items: center;
+                        a{
+                            text-decoration: none;
+                            color: $white-color;
+                            font-size: 1rem;
+                        }
+                        a.btn{
+                            padding: 6px 20px;
+                            border-radius: 5px;
+                            background-color: $white-color;
+                            color: $primary-color;
+                            font-size: 1rem;
+                            border-radius: 30px;
+                            &:hover{
+                                background-color: $white-color;
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+                a{
+                    img{
+                        max-height: 50px;
+                    }
+                }
+                .nav-toggler{
+                    color: $white-color;
+                    display: none;
+                    div.fa{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .mobile-menu{
+            background-color: $white-color;
+            position: fixed;
+            display: none;
+            z-index: 2;
+            width: 40%;
+            right: -50%;
+            height: 100vh;
+            overflow: auto;
+            transition: right 0.2s linear;
+            &__visible{
+                right: 0 !important;
+            }
+            .mobile-nav-toggler{
+                width: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 40px;
+                padding-top: 20px;
+                .fa{
+                    font-size: 25px;
+                    color: $primary-color;
+                }
+            }
+            .mobile-menu-container{
+                width: 100%;
+                #mobile-menu-nav{
+                    width: 100%;
+                    margin: 0;
+                    list-style: none;
+                    padding: 0px;
+                    li{
+                        list-style: none;
+                        padding:5px 5px 5px 20px;
+                        a{
+                            color: $black-color
+                        }
+                        a.btn{
+                            background-color: $primary-color;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
+
+/*  end of the header */
+/*  ############################################################################3 */

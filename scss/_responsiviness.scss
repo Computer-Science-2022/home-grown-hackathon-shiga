@@ -1,0 +1,173 @@
+@media  screen and (max-width:990px){
+    .header-nav{
+        width: 98% !important;
+        .nav-container{
+            .main-menu{
+                padding-right: 20px !important;
+            }
+        }
+    }
+    .medical-kits-container{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+}
+
+@media  screen and (max-width:891px){
+    .header-nav{
+        width: 99.4% !important;
+        .nav-container{
+            .main-menu{
+                padding-right: 5px !important;
+            }
+        }
+    }
+}
+
+@media  screen and (max-width:853px){
+    .contacts-menu{
+        display: none !important;
+    }
+    main{
+        margin-top: 50px;
+    }
+    .mobile-menu{
+        display: block !important;
+    }
+    header{
+        height: 50px;
+    }
+    .nav-toggler{
+        display: block !important;
+    }
+    .header-nav{
+        width: 100% !important;
+        flex-direction: column  !important;
+        .logo-container{
+            display: none;
+        }
+        .nav-container{
+            .contacts-menu{
+                display: none;
+            }
+            .main-menu{
+                height: 100% !important;
+                padding-right: 40px !important;
+                padding-left: 40px !important;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+                justify-content: space-between !important;
+                .mobile-logo{
+                    display: block !important;
+                }
+                .nav-links{
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    .hero-section{
+        width: 100%;
+        height: calc(calc(100vh - 50px)/2);
+        background-color: aqua;
+    }
+
+
+
+
+}
+
+@media  screen and (max-width:767px) {
+
+    .telehealth-grid{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+
+    .product-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+
+}
+
+@media  screen and (max-width:549px) {
+    .mobile-menu{
+        width: 60% !important;
+        right: -60% !important;
+    }
+    .text-content{
+       
+        .box{
+            height: 80% !important;
+        }
+        
+    }
+
+    footer{
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+
+@media  screen and (max-width:480px) {
+    
+ .team-slide{
+    display: flex !important;
+    flex-direction: column !important;
+    .img-wrapper{
+        width: 100% !important;
+        height: 50% !important;
+        display: flex;
+        justify-content: center;
+        img{
+            max-height: 100% !important;
+            width: auto !important;
+        }
+    }
+    .text-content{
+        width: 100% !important;
+        height: 50% !important;
+        padding: 0px !important;
+        .box{
+            width: 100% !important;
+            height: 100% !important;
+            padding: 6px !important;
+            background-color: transparent !important;
+            color:#f5f8f5;
+        }
+    }
+}
+.medical-kits-container{
+    grid-template-columns: repeat(1,1fr) !important;
+}
+
+.telehealth-grid{
+    grid-template-columns: repeat(1,1fr) !important;
+    padding: 0px 20px ;
+}
+}
+
+
+@media  screen and (max-width:360px) {
+    .mobile-menu{
+        width: 90% !important;
+        right: -90% !important;
+    }
+
+    footer{
+
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .team-slider{
+        .team-slide{
+            height: 400px !important;
+        }
+    }
+
+
+
+}

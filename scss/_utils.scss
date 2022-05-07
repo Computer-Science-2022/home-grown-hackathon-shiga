@@ -1,0 +1,121 @@
+.title{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+}
+.keya-title::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 30%;
+    margin-left: calc(50% - 15%);
+    border-width: 0 0 3px;
+    border-style: solid;
+    border-color: $primary-color;
+}
+
+.keya-title {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+}
+
+.keya-title::before {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+
+    border-width: 0 0 8px;
+    border-style: solid;
+    width: 10%;
+    margin-left: calc(50% - 5%);
+    display: grid;
+    align-self: center;
+}
+.keya-text-primary{
+    color: $primary-color !important;
+}
+
+.btn-primary{
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+}
+.keya-home-card{
+    min-height: 250px;
+}
+.btn-bottom{
+    position:absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0px;
+}
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance:none;
+    border: none;
+    background-color: transparent;
+    &::before{
+        width: 20px;
+        height: 20px;
+        z-index: 3;
+        color: $white-color;
+        background-color: transparent;
+    }
+    &.slick-next{
+        right: 0px;
+        &::before{
+        //    font awesome
+            content: "\f054";
+            font-family: FontAwesome;
+        }
+    }
+    &.slick-prev{
+        left: 0px;
+        z-index: 3;
+        &::before{
+        content:"\f053";
+        font-family: FontAwesome;
+        }
+    }
+}
+.text-sm{
+    font-size: 13px;
+}
+.text-xsm{
+    font-size: 11px;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+.border-black{
+    border: 0.2px rgba(82, 82, 82, 0.438) solid;
+}
+
+.telehealth-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+
+.loadmore-btn{
+    background-color:rgba(61, 60, 60, 0.836);
+    color: $white-color;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.justify-center{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

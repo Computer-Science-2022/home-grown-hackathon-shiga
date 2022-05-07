@@ -1,0 +1,10 @@
+.team-slider {
+  width: 100%;
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px; }
+  .team-slider .team-slide {
+    width: 49%;
+    padding: 20px;
+    background-color: red; }

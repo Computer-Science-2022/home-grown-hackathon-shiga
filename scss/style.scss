@@ -1,0 +1,49 @@
+@import "variables";
+
+@import "utils";
+
+@import "header";
+
+@import "hero";
+
+@import "medical";
+
+@import "teamSlider";
+
+@import "singleProduct";
+
+@import "footer";
+
+@import "responsiviness";
+
+main{
+    width: 100%;
+    margin-top: 100px;
+
+}
+.slick-dots{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    bottom: 0px;
+    li{
+        &.slick-active{
+            background-color: $white-color;
+        }
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        margin: 0px 5px;
+        button{
+            display: none;
+        }
+    }
+}
+
+.login-btn-wrapper{
+    display: flex;
+    align-items: center;
+}

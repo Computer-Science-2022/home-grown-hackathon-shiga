@@ -1,0 +1,1 @@
+<footer class="footer text-center"> <?php echo date('Y');?> &copy; Shiga Developed by <a href="https://vonsung.co.rw"><strong>VONSUNG</strong></a> </footer>

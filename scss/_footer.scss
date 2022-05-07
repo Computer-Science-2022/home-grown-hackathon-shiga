@@ -1,0 +1,27 @@
+footer{
+    padding: 30px 20px;
+    background-color: #0f200e;
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+    .footer-item{
+
+        img{
+            max-width: 100%;
+        }
+        h6{
+            color: aquamarine;
+        }
+        ul{
+            padding: 0;
+            list-style:none;
+            padding-top: 10px;
+            color: rgb(218, 218, 218);
+            li{
+                line-height: 35px;
+            }
+        }
+    }
+}
+}
