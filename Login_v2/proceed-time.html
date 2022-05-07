@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service page</title>
+    <!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+
+
+</head>
+<body class="service">
+    <div class="servicepage">
+        <img class="hopsitalimage" src="./images/icons/Rectangle 10.png" alt="">
+    </div>
+    <div>
+        <p class="txt1" style="font-weight: bolder ;margin-left:20px; color:black; margin-bottom:30px; margin-top: 10%; font-size:25px;">
+            Times Available
+        </p>
+    </div>
+
+    <ul class="days1">  
+    <li>07:00</li>
+    <li>08:00</li>
+    <li>09:00</li>
+    <li>10:00</li>
+    <li>11:00</li>
+    <li>12:00</li>
+    <li><span class="active">13:00</span></li>
+    <li>14:00</li>
+    <li>15:00</li>
+    <li><span class="active">16:00</span></li>
+    <li>17:00</li>
+    <li>18:00</li>
+    <li>19:00</li>
+    <li>20:00</li>
+    <li>21:00</li>
+    <li>22:00</li>        
+    </ul>
+
+
+      <button id="myBtn" class="login100-form-btn3"  style="margin-bottom: 20px !important;">
+        <!-- <a href="#" style="color: white;"> -->
+            Submit
+        <!-- </a> -->
+    </button>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img class="warning-image" src="./images/icons/Group.png" alt="">
+          <p style="font-weight: bolder; color:black; margin-bottom:30px; margin-top: 10%; font-size:15px;">Are you sure you want to book this appointment?
+          </p>
+          <ul class="days2">  
+            <li>
+                <button id="myBtn2" class="login100-form-btn4">
+                    <a href="./successpage.html" style="color: white;">
+                        Yes
+                    </a>
+                </button>
+                
+            </li>
+            <li>
+                <button class="login100-form-btn5">
+                    <a href="./proceed-time.html">
+                        No
+                    </a>
+                </button> 
+            </li>        
+            </ul>
+        </div>
+      </div>
+    
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+</body>
+</html>
